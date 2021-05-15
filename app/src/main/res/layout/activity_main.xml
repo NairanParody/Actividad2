@@ -12,16 +12,46 @@
         android:layout_width="311dp"
         android:layout_height="278dp"
         android:layout_marginStart="48dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/txvMainNumero"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/pizarron" />
 
     <Button
+        android:id="@+id/btnMainZoomMas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="40dp"
+        android:text="Zoom +"
+        app:layout_constraintBottom_toTopOf="@+id/btnMainOcultar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMainReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="24dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMainOcultar" />
+
+    <Button
+        android:id="@+id/btnMainOcultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="24dp"
+        android:text="Ocultar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/btnMainSumar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
+        android:layout_marginStart="84dp"
         android:layout_marginBottom="40dp"
         android:text="Sumar"
         app:layout_constraintBottom_toTopOf="@+id/btnMainZoomMas"
@@ -31,7 +61,7 @@
         android:id="@+id/btnMainRestar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="87dp"
+        android:layout_marginStart="76dp"
         android:layout_marginBottom="40dp"
         android:text="Restar"
         app:layout_constraintBottom_toTopOf="@+id/btnMainZoomMenos"
@@ -42,49 +72,23 @@
         android:layout_width="145dp"
         android:layout_height="73dp"
         android:layout_marginStart="132dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-black"
         android:text="0"
         android:textAlignment="center"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnMainSumar"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnMainZoomMas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginBottom="40dp"
-        android:text="Zoom +"
-        app:layout_constraintBottom_toTopOf="@+id/btnMainOcultar"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnMainZoomMenos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="82dp"
+        android:layout_marginStart="68dp"
         android:layout_marginBottom="40dp"
         android:text="Zoom -"
         app:layout_constraintBottom_toTopOf="@+id/btnMainReset"
         app:layout_constraintStart_toEndOf="@+id/btnMainZoomMas" />
 
-    <Button
-        android:id="@+id/btnMainOcultar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginBottom="90dp"
-        android:text="Ocultar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnMainReset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginBottom="90dp"
-        android:text="Reset"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnMainOcultar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
