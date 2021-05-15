@@ -1,0 +1,90 @@
+package com.example.actividad2;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Button btnMainSumar, btnMainRestar, btnMainZoomMas, btnMainZoomMenos, btnMainOcultar, btnMainReset;
+    private TextView txvMainNumero;
+    private int cont = 0;
+    float tamaño = 20;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        this.findViews();
+    }
+
+    private void findViews(){
+        btnMainSumar = findViewById(R.id.btnMainSumar);
+        btnMainRestar = findViewById(R.id.btnMainRestar);
+        btnMainZoomMas = findViewById(R.id.btnMainZoomMas);
+        btnMainZoomMenos = findViewById(R.id.btnMainZoomMenos);
+        btnMainOcultar = findViewById(R.id.btnMainOcultar);
+        btnMainReset = findViewById(R.id.btnMainReset);
+        txvMainNumero = findViewById(R.id.txvMainNumero);
+
+        btnMainSumar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cont++;
+                imprimir();
+            }
+        });
+
+        btnMainRestar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cont--;
+                imprimir();
+            }
+        });
+
+        btnMainReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cont = 0;
+                imprimir();
+            }
+        });
+
+        btnMainZoomMas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tamaño = tamaño + 5;
+                txvMainNumero.setTextSize(tamaño);
+            }
+        });
+
+        btnMainZoomMenos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tamaño = tamaño - 5;
+                txvMainNumero.setTextSize(tamaño);
+            }
+        });
+
+        btnMainOcultar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                txvMainNumero.setVisibility(View.INVISIBLE);
+            }
+        });
+    }
+
+    private void imprimir(){
+        String contText;
+        contText = Integer.toString(cont);
+        txvMainNumero.setText(contText);
+    }
+
+
+}

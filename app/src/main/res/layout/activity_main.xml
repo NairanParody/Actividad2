@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_primary"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="311dp"
+        android:layout_height="278dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/txvMainNumero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pizarron" />
+
+    <Button
+        android:id="@+id/btnMainSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="40dp"
+        android:text="Sumar"
+        app:layout_constraintBottom_toTopOf="@+id/btnMainZoomMas"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMainRestar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginBottom="40dp"
+        android:text="Restar"
+        app:layout_constraintBottom_toTopOf="@+id/btnMainZoomMenos"
+        app:layout_constraintStart_toEndOf="@+id/btnMainSumar" />
+
+    <TextView
+        android:id="@+id/txvMainNumero"
+        android:layout_width="145dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="132dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMainSumar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMainZoomMas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="40dp"
+        android:text="Zoom +"
+        app:layout_constraintBottom_toTopOf="@+id/btnMainOcultar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMainZoomMenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginBottom="40dp"
+        android:text="Zoom -"
+        app:layout_constraintBottom_toTopOf="@+id/btnMainReset"
+        app:layout_constraintStart_toEndOf="@+id/btnMainZoomMas" />
+
+    <Button
+        android:id="@+id/btnMainOcultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="90dp"
+        android:text="Ocultar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMainReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="90dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMainOcultar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
