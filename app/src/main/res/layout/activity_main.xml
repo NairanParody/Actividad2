@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_primary"
+    android:background="@color/fondo"
     tools:context=".MainActivity">
 
     <ImageView
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginBottom="40dp"
-        android:text="Zoom +"
+        android:text="@string/zoommas"
         app:layout_constraintBottom_toTopOf="@+id/btnMainOcultar"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginBottom="24dp"
-        android:text="Reset"
+        android:text="@string/reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnMainOcultar" />
 
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginBottom="24dp"
-        android:text="Ocultar"
+        android:text="@string/ocultar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginBottom="40dp"
-        android:text="Sumar"
+        android:text="@string/sumar"
         app:layout_constraintBottom_toTopOf="@+id/btnMainZoomMas"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginBottom="40dp"
-        android:text="Restar"
+        android:text="@string/restar"
         app:layout_constraintBottom_toTopOf="@+id/btnMainZoomMenos"
         app:layout_constraintStart_toEndOf="@+id/btnMainSumar" />
 
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginBottom="40dp"
-        android:text="Zoom -"
+        android:text="@string/zoommenos"
         app:layout_constraintBottom_toTopOf="@+id/btnMainReset"
         app:layout_constraintStart_toEndOf="@+id/btnMainZoomMas" />
 

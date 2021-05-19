@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Actividad2</string>
+    <string name="cartelConversor">Conversor Monedas</string>
+    <string name="SeleccioneUnaMoneda">Seleccione una Moneda</string>
+    <string name="Real">Real (Brasil)</string>
+    <string name="Euro">Euro</string>
+    <string name="Dolar">Dolar (USA)</string>
+    <string name="convertir">Convertir</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="resultado">Resultado</string>
+    <string name="monto">Ingrese Monto en Pesos</string>
+    <string name="sumar">Sumar</string>
+    <string name="restar">Restar</string>
+    <string name="zoommas" translatable="false">Zoom +</string>
+    <string name="zoommenos" translatable="false">Zoom -</string>
+    <string name="ocultar">Ocultar</string>
+    <string name="reset">Reiniciar</string>
 </resources>

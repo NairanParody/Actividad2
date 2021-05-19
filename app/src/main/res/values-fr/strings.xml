@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Actividad2</string>
+    <string name="cartelConversor" translatable="false">Convertisseur de devises</string>
+    <string name="SeleccioneUnaMoneda">Sélectionnez une devise</string>
+    <string name="Real">Real (Brésil)</string>
+    <string name="Euro">Euro</string>
+    <string name="Dolar">Dollar (USA)</string>
+    <string name="convertir">Changer en</string>
+    <string name="reiniciar">Redémarrer</string>
+    <string name="resultado">Résultat</string>
+    <string name="monto">Entrez le montant en Pesos</string>
+    <string name="sumar">Ajouter</string>
+    <string name="restar">Soustraire</string>
+    <string name="ocultar">Cacher</string>
+    <string name="reset">Redémarrer</string>
+</resources>
