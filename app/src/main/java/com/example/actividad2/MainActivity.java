@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import static android.widget.Toast.makeText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
         btnMainRestar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                cont--;
-                imprimir();
+                if (cont > 0) {
+                    cont--;
+                    imprimir();
+                }
             }
         });
 
@@ -75,15 +80,18 @@ public class MainActivity extends AppCompatActivity {
         btnMainOcultar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                txvMainNumero.setVisibility(View.INVISIBLE);
+                if (txvMainNumero.getVisibility()==View.VISIBLE){
+                    txvMainNumero.setVisibility(View.INVISIBLE);
+                }else{
+                    txvMainNumero.setVisibility(View.VISIBLE);
+                }
+
             }
         });
     }
 
     private void imprimir(){
-        String contText;
-        contText = Integer.toString(cont);
-        txvMainNumero.setText(contText);
+        txvMainNumero.setText(String.valueOf(cont));
     }
 
 

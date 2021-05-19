@@ -43,19 +43,15 @@ public class SegundaActividad extends AppCompatActivity {
         btnSegundaConvertir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (edtSegundaMonto.getText().equals(0.0)){
-                    Toast.makeText( SegundaActividad.this, "INGRESE UN MONTO", Toast.LENGTH_LONG).show();
-                }else{
                     convertirMoneda();
-                }
             }
         });
 
         btnSegundaReiniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edtSegundaMonto.setText("0");
-                edtSegundaResultado.setText("0");
+                edtSegundaMonto.setText(" ");
+                edtSegundaResultado.setText(" ");
             }
         });
 
